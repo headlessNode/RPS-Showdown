@@ -20,7 +20,7 @@ RPS Showdown is a simple web-based Rock-Paper-Scissors game where players can co
 4. The result of the round will be displayed, indicating whether you won, lost, or tied with the computer.
 5. The scores for the player and computer will be updated accordingly.
 6. The game will continue until either the player or the computer reaches a score of 5.
-7. Once the game ends, click any button to start a new game.
+7. Once the game ends, click play again button to start a new game.
 
 
 ## Technologies Used
