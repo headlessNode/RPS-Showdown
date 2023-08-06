@@ -72,7 +72,8 @@
     
         playRound();
         
-        if(round == 5){
+
+        if(playerScore == 5 || computerScore == 5){
             for(var i=0;i<btns.length;i++){
                 btns[i].removeEventListener('click', game);
             }
