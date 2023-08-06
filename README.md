@@ -1,7 +1,5 @@
 # RPS Showdown - Rock-Paper-Scissors Game
 
-## :rock: :scroll: :scissors:
-
 ## Introduction
 
 RPS Showdown is a simple web-based Rock-Paper-Scissors game where players can compete against the computer in rounds of this classic hand game. The objective is to reach a score of 5 points first to win the game. The game is built using HTML, CSS, and JavaScript and incorporates Font Awesome icons for an enhanced user interface.
