@@ -2,10 +2,94 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Rock paper scissors</title>
-        <script type="text/javascript" src="./js/main.js"></script>
+        <title>RPS Showdown</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./js/main.js" defer></script>
+        <!-- FONT AWESOME LIBRARY LINK -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
     </head>
     <body>
+        <!-- HEADER -->
+        <div class="header-container">
+            <!-- Game title -->
+            <h1 class="header">RPS Showdown</h1>
+        </div>
         
+        <!-- MAIN BODY -->
+        <div class="main-body-container" id="screen-1">
+            
+            <!-- BOARD -->
+            <div class="board">
+                <!-- Score display for player, round, and computer -->
+                <div class="board-txt">
+                    <div id="choice-txt-1">
+                        Player: 0
+                    </div>
+                    <div id="round-txt">
+                        Round: 0
+                    </div>
+                    <div id="choice-txt-2">
+                        Computer: 0
+                    </div>
+                </div>
+                <!-- Icons displaying player's choice, result text, and computer's choice -->
+                <div class="choices-icons">
+                    <div class="player-choice">
+                        <i class="fa-solid fa-question fa-10x"></i>
+                    </div>
+                    <div class="result-txt">
+                    </div>
+                    <div class="computers-choice">
+                        <i class="fa-solid fa-question fa-10x"></i>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- Try again message (not visible initially) -->
+            <div class="try-again">
+            </div>
+    
+            <!-- 3 buttons with text and corresponding icons to choose weapons -->
+            <div class="weapon-txt">
+                <!-- Weapon selection header -->
+                <h3>Choose your weapon</h3>
+            </div>
+            <div class="buttons" id="buttons-container">
+                <div class="btn-container">
+                    <!-- Button and icon for choosing paper -->
+                    <button class="btn-paper">
+                        <i id="paper" class="fa-solid fa-hand fa-10x fa-flip-horizontal"></i>
+                    </button>
+                    <!-- Button text for paper -->
+                    <p class="btn-txt-1">Paper</p>
+                </div>
+                <div class="btn-container">
+                    <!-- Button and icon for choosing rock -->
+                    <button class="btn-rock">
+                        <i id="rock" class="fa-solid fa-hand-rock fa-10x fa-flip-horizontal"></i>
+                    </button>
+                    <!-- Button text for rock -->
+                    <p class="btn-txt-2">Rock</p>
+                </div>
+                <div class="btn-container">
+                    <!-- Button and icon for choosing scissors -->
+                    <button class="btn-scissors">
+                        <i id="scissors" class="fa-solid fa-hand-scissors fa-10x fa-rotate-90"></i>
+                    </button>
+                    <!-- Button text for scissors -->
+                    <p class="btn-txt-3">Scissor</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-container">
+            <footer>
+                <span class="footer-txt">Copyright headlessNode &#169 2023</span> 
+                <a href="https://github.com/headlessNode" target="_blank" class="footer-link"><i id="github-icon" class="fa-brands fa-github"></i></a>
+            </footer>
+        </div>
+
     </body>
 </html>

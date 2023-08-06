@@ -1,0 +1,200 @@
+/* General styles for the entire body of the page */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #E7ECEF;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-body-container{
+  flex: 1;
+}
+
+/* Styles for the header section */
+.header {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C5D1EB;
+  padding: 30px 0px 30px 0;
+  box-shadow: 2px 2px 8px 8px #7880B5;
+}
+
+/* Styles for the "Choose your weapon" text */
+.weapon-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styles for the score and round display on the game board */
+.board-txt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 40px 0px 40px 0px;
+  font-size: large;
+}
+
+/* Styles for the round text to make it bold */
+#round-txt {
+  font-weight: bold;
+}
+
+/* Styles for the container of player's choice, result text, and computer's choice icons */
+.choices-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px 0px 60px 0px;
+}
+
+/* Styles for the buttons to reset default button styles */
+button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Styles for the container of the weapon selection buttons */
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Styles for the spacing of button text for each weapon */
+.btn-txt-1 {
+  padding-left: 40px;
+}
+
+.btn-txt-2 {
+  padding-left: 35px;
+}
+
+.btn-txt-3 {
+  padding-left: 40px;
+}
+
+/* Styles for the zoom-in animation on click for rock and paper icons */
+#rock,
+#paper,
+#scissors {
+  display: inline-block;
+}
+
+#paper:active,
+#rock:active {
+  animation: zoom 0.4s;
+  transform-origin: center;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1) rotate(90deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(90deg);
+  }
+}
+
+/* Styles for the zoom-in animation on click for scissors icon */
+#scissors:active {
+  animation: zoomScissors 0.4s;
+  transform-origin: center;
+}
+
+@keyframes zoomScissors {
+  0% {
+    transform: scale(1) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(180deg);
+  }
+}
+
+/* Styles for the shake animation on hover for weapon selection buttons */
+.btn-container:hover {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 6px, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* Styles for the result text appearance */
+.result-style {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* Styles for the "Try Again" section */
+.try-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styles for the "Try Again" button appearance */
+.try-again-btn {
+  padding: 10px;
+  width: 150px;
+  font-size: larger;
+  color: white;
+  border: 1px solid;
+  border-radius: 20px;
+  position: relative;
+  background-color: black;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+/* Styles for the "Try Again" button on hover */
+.try-again-btn:hover {
+  background-color: #7880B5;
+  transition-duration: 0.5s;
+}
+
+/* Styles for the "Try Again" button on click */
+.try-again-btn:active {
+  box-shadow: 2px 2px 2px 2px #0D21A1;
+  transition-duration: 0.1s;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-bottom: 5px;
+}
+.footer-txt{
+  font-size: large;
+}
+
+
+#github-icon {
+  transition: transform 0.3s;
+}
+
+
+#github-icon:hover {
+  transform: scale(1.5) rotate(360deg); 
+}
