@@ -14,7 +14,7 @@ RPS Showdown is a simple web-based Rock-Paper-Scissors game where players can co
 
 ## How to Play
 
-1. Access the game on your web browser by visiting [https://yourdomain.com/rps-showdown]([https://headlessnode.github.io/RPS-Showdown/]).
+1. Access the game on your web browser by visiting [https://headlessnode.github.io/RPS-Showdown/]([https://headlessnode.github.io/RPS-Showdown/]).
 2. Choose your weapon by clicking one of the three buttons: Rock, Paper, or Scissors.
 3. The computer will randomly select its weapon.
 4. The result of the round will be displayed, indicating whether you won, lost, or tied with the computer.
